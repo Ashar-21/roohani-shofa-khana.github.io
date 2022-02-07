@@ -34,6 +34,14 @@
     />
     <style type="text/css">
       /* Style the Image Used to Trigger the Modal */
+      @media only screen and (max-width: 700px) {
+      .mycontainer{
+        margin-left: 50px;
+      }
+      .btnSend{
+        margin-left: 65px;
+      }
+    }
       #myImg {
         border-radius: 5px;
         cursor: pointer;
@@ -314,9 +322,9 @@
       ></iframe>
     </div>
     <!-- Contact Us -->
-    <div>
-      <div class="container">
-        <div class="content">
+    <div class="mycontainer">
+      <div class="container ">
+        <div class="content ">
           <div class="left-side">
             <div class="address details">
               <i class="fas fa-map-marker-alt"></i>
@@ -360,7 +368,7 @@
               <div class="input-box message-box">
                 <input type="text" id="msg" placeholder="Enter your message" />
               </div>
-              <div class="button">
+              <div class="button btnSend">
                 <input type="button" value="Send Now" onclick="sendEmail()" />
               </div>
             </form>
